@@ -20,7 +20,6 @@ db = pymysql.connect(user=auth['username'], password=auth['password'], \
                     database=auth['database'], host=auth['host'], port=auth['port'])
 cursor = db.cursor()
 sql = 'show tables'
-cursor.execute(sql)
 try:
     cursor.execute(sql)
     # Display all table names
